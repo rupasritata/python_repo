@@ -15,7 +15,7 @@ def check_Armstrong():
          print("Not an Armstrong number")
 check_Armstrong()
 
-
+# Range of Armstrong numbers
 input1 = int(input("Enter the start range:"))
 input2 = int(input("Enter the end range:"))
 for num in range(input1 , input2 + 1):
@@ -28,4 +28,5 @@ for num in range(input1 , input2 + 1):
              num1 = num1 // 10     
         if sum == num:  
              print(num)
+
        
