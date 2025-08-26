@@ -81,9 +81,19 @@ for i in input_nums.split(","):
     print(i)
     # num1,num2 = input("Enter two numbers in csv format:").split()
 
-# num1,num2,num3 = map(int,input("Enter the numbers in csv format:").split())
-# input1 = list( map(int,input("Enter the numbers in csv format:").split()))
-# print(num1,num2,num3)
+
+# map()
+# The map() function applies a given function to every item in an iterable (like a list), returning a map object (which can be converted to a list).
+# Great for transforming, converting, or processing lists without a loop.
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+products = list(map(lambda x, y: x * y, a, b))
+print(products)                  
+
+numbers = ['1', '2', '3', '4']
+ints = list(map(int, numbers))   # Convert strings to integers
+print(ints)          
 
 # join : it joins the elements of an iterable to the end of the string ,we can use any delimeter to seperate the list elements into strings
 
@@ -111,5 +121,6 @@ print(set1.symmetric_difference(set2))
 s3 = {1,2,3,4,5}
 print(s3.isdisjoint(set2))
 print(s3.issuperset(set2))
+
 
 
